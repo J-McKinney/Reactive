@@ -9,8 +9,8 @@
         "start": "rm -rf dist && parcel ./src/index.html",
         "dev": "rm -rf dist && parcel ./src/index.html",
         "build": "rm -rf dist && parcel build ./src/index.html --no-source-maps",
-        "predeploy": "parcel build",
-        "deploy": "gh-pages -d dist"
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "devDependencies": {
         "gh-pages": "^6.3.0",
